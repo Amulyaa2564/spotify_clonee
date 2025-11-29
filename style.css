@@ -1,31 +1,102 @@
+:root{
+    --spotify-background:#F6F6F6;
+    --spotify-items-background:#ececec;
+    --spotify-items-border:#d9d9d9;
+    --button-background:#DCDCDC;
+}
+
+
+
 body{
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  background-color: #000;
-  color: #fff;
-  overflow: hidden;
+    margin:0;
+    background-color: var(--spotify-background);
+    font-family: "Inter","Helvetica Neue",Arial,sans-serif;
+}
+.layout{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 70px  auto 100px ;
+    grid-template-areas: 
+    "header main"
+    "sidebar main"
+    "sidebar footer";
+    gap: 10px;
+
+}
+.item{
+    border: 1px solid var(--spotify-items-border);
+    border-radius: 5px;
+}
+.header{
+    background-color: var(--spotify-items-background);
+    grid-area: header;
+
+}
+.home{
+    margin: 10px;
+}
+
+.home:hover i,
+.home:hover span{
+    color: black;
+}
+.home i,
+.home span{
+    color: gray;
+}
+.search{
+    margin: 10px;
+}
+.search i,
+.search span{
+    color: gray;
+}
+
+.search:hover i,
+.search:hover span{
+    color: black;
+}
+.aside{
+    background-color: var(--spotify-items-background);
+    grid-area: sidebar;
+
+}
+.lib-icon{
+    width: 10%;
+    filter: brightness(0) invert(50%);
+    
+}
+
+.library{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+    color: gray;
+    padding: 2%;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.playlist,
+.artists,
+.albums{
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--button-background);
+    font-size: 12px;
 }
 
 .main{
-    display: flex;
-    height: 100vh;
-}
+   background-color: var(--spotify-items-background);
+    grid-area: main;
 
-.sidebar{
-    background-color: #121212;
-    width: 340px;
-    border-radius: 1rem;
 }
-.main-content{
-    background-color: #121212;
-    flex: 1;
-    border-radius: 1rem;
-    overflow: auto;
-}
-.music-player{
-    background-color: black;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 72px;
+.footer{
+    background-color: var(--spotify-items-background);
+    grid-area: footer;
+
 }
