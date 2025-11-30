@@ -60,8 +60,13 @@ body{
 .aside{
     background-color: var(--spotify-items-background);
     grid-area: sidebar;
+    padding: 4px;
 
 }
+.second-row span{
+    font-size: 12px;
+}
+
 .lib-icon{
     width: 10%;
     filter: brightness(0) invert(50%);
@@ -72,9 +77,10 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 10%;
+    margin-top: 3px;
     color: gray;
     padding: 2%;
+    margin-bottom: 7px;
 }
 .buttons{
     display: flex;
@@ -89,11 +95,197 @@ body{
     background-color: var(--button-background);
     font-size: 12px;
 }
+.recent-row{
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -7px;
+    margin-bottom: 5px;
+}
+.thumbnail-liked{
+    width: 45px;
+    height: 45px;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right,
+        #5038A0 0%,
+        #5C3EBF 25%,
+        #6A4FCB 50%,
+        #4E68C8 75%,
+        #2E77D0 100%);
+    margin-top: 12px;
+    margin-right: 5px;
+    
+} 
+.thumbnail-anirudh{
+    background-image: url('anirudh.jpeg');
+    background-size: cover;
+
+}
+.thumbnail-harry{
+    background-image: url('harry.jpeg');
+    background-size: cover;
+    border-radius: 30px;
+}
+.thumbnail-dsp{
+    background-image: url('dsp.jpeg');
+    background-size: cover;
+
+}
+.thumbnail-oneD{
+    background-image: url('oneD.jpeg');
+    background-size: cover;
+}
+
+.fa-heart{
+    color: white;
+    
+}
+.songs-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    
+}
+.songs-row .fa-thumbtack{
+    transform: rotate(45deg);
+    color: #8a6d3b;
+    
+}
+.playlist-row{
+    display: flex;
+    align-items: center;
+}
+
+.playlist-row p{
+    margin: 0;
+    font-size: 13px;
+}
+
+.playlist-row span{
+    font-size: 11px;
+    color: gray;
+}
+
+.playlist-row i.fa-thumbtack{
+    margin-right: 4px;
+    transform: rotate(45deg);
+}
 
 .main{
    background-color: var(--spotify-items-background);
     grid-area: main;
 
+}
+.arrow-button{
+    margin-right: 5px;
+    padding-top: 6px;
+    border-radius: 30px;
+    height: 35px;
+    width: 35px;
+    font-size: 15px;
+    padding-left: 8px;
+    background-color:white;
+}
+.explore-heading{
+    background-color: black;
+    width: 150px;
+    height: 34px;
+    color: white;
+    padding: 5px;
+    border-radius: 25px;
+    text-align: center;
+}
+.install-heading{
+    background-color: white;
+    width: 120px;
+    height: 34px;
+    color: black;
+    padding: 5px;
+    border-radius: 25px;
+    text-align: center;
+}
+.bell-icon{
+    background-color: white;
+    width: 37px;
+    height: 33px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 25px;
+}
+.user-icon{
+    background-color: red;
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 25px;
+
+}
+.all-option{
+    color: white;
+    width: 48px;
+    height: 38px;
+    background-color: black;
+    text-align: center;
+    border-radius: 23px;
+    padding: 6px;
+}
+.music-option{
+    color: black;
+    width: 65px;
+    height: 39px;
+    background-color: var(--button-background);
+    text-align: center;
+    border-radius: 23px;
+    padding: 6px;
+
+}
+.podcast-option{
+    color: black;
+    width: 85px;
+    height: 39px;
+    background-color: var(--button-background);
+    text-align: center;
+    border-radius: 23px;
+    padding: 6px;
+
+}
+.audio-option{
+    color: black;
+    width: 100px;
+    height: 39px;
+    background-color: var(--button-background);
+    text-align: center;
+    border-radius: 23px;
+    padding: 6px;
+
+}
+.daily-mix{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(165px,1fr));
+    grid-template-rows: repeat(2,50px);
+    gap: 10px;
+}
+.mix{
+    display: flex;
+    background-color: var(--button-background);
+    align-items: center;
+    gap: 10px;
+    
+}
+.mix img{
+    width: 50px;
+    height: 50px;
+}
+.mix p{
+    font-size: 15px;
+    font-weight: bold;
 }
 .footer{
     background-color: var(--spotify-items-background);
