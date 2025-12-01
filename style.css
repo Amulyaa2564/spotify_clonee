@@ -268,7 +268,7 @@ body{
 }
 .daily-mix{
     display: grid;
-    grid-template-columns: repeat(4,minmax(165px,1fr));
+    grid-template-columns: repeat(4,minmax(170px,1fr));
     grid-template-rows: repeat(2,50px);
     gap: 10px;
 }
@@ -287,6 +287,27 @@ body{
     font-size: 15px;
     font-weight: bold;
 }
+.recommended{
+    display: grid;
+    grid-template-columns: repeat(6,minmax(150px,170px));
+    gap: 10px;
+    grid-template-rows: 195px;
+    
+
+}
+.recommended-mix{
+    height: 176px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.recommended img{
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+
+}
+
 .footer{
     background-color: var(--spotify-items-background);
     grid-area: footer;
