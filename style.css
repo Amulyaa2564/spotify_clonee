@@ -60,8 +60,13 @@ body{
     background-color: var(--spotify-items-background);
     grid-area: sidebar;
     padding: 4px;
-
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 260px;   
 }
+
 .second-row span{
     font-size: 12px;
 }
@@ -116,7 +121,7 @@ body{
         #6A4FCB 50%,
         #4E68C8 75%,
         #2E77D0 100%);
-    margin-top: 12px;
+    /* margin-top: 12px; */
     margin-right: 5px;
     
 } 
@@ -124,6 +129,19 @@ body{
     background-image: url('anirudh.jpeg');
     background-size: cover;
 
+}
+.thumbnail-abhyankkar{
+    background-image: url('sai.jpeg');
+    background-size: cover;
+
+}
+.thumbnail-thaman{
+    background-image: url('thaman.jpeg');
+    background-size: cover;
+}
+.thumbnail-anup{
+    background-image: url('anup.jpeg');
+    background-size: cover;
 }
 .thumbnail-harry{
     background-image: url('harry.jpeg');
@@ -147,11 +165,11 @@ body{
 .songs-row{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: start;
     gap: 10px;
     overflow-y: scroll;
-    height: 300px;
+    height: 350px;
     
 }
 .songs-row .fa-thumbtack{
@@ -184,6 +202,8 @@ body{
     grid-area: main;
     overflow-x: hidden;
     overflow-y: auto;
+    margin-left: 30px;
+    min-height: 100vh;
 
 }
 .arrow-button{
